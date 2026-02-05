@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid #007bff;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        .info p {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* Skills Section */
+        .skills {
+            margin-top: 15px;
+        }
+
+        .skill {
+            margin-bottom: 15px;
+        }
+
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .progress {
+            width: 100%;
+            background: #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 15px;
+            background: #007bff;
+        }
+
+        .badges {
+            margin-top: 15px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #007bff;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        .badge i {
+            margin-right: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <img src="https://via.placeholder.com/150" alt="Profile Picture">
+        <div>
+            <h1>Saksham Saini</h1>
+            <p><i class="fa-solid fa-laptop-code"></i> Full Stack Web Developer</p>
+        </div>
+    </div>
+
+    <!-- Name Section -->
+    <section class="info">
+        <h2>Name</h2>
+        <p>Saksham Saini</p>
+    </section>
+
+    <!-- Email Section -->
+    <section class="info">
+        <h2>Email</h2>
+        <p>saksham.saini@example.com</p>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="info">
+        <h2>Profile</h2>
+        <p>MERN Stack Developer / Full Stack Web Developer</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="info">
+        <h2>About me</h2>
+        <p>
+            I am a passionate Full Stack Web Developer with a strong foundation in
+            HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB.
+            I enjoy building scalable web applications and continuously learning
+            new technologies to improve my skills.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+        <h2>Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                <div class="skill-name">
+                    <span>HTML & CSS</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width:90%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <span>JavaScript</span>
+                    <span>85%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width:85%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <span>React</span>
+                    <span>80%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width:80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <span>Node.js & Express</span>
+                    <span>75%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width:75%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <span>MongoDB</span>
+                    <span>70%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width:70%"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Skill Badges -->
+        <div class="badges">
+            <span class="badge"><i class="fa-brands fa-html5"></i>HTML</span>
+            <span class="badge"><i class="fa-brands fa-css3-alt"></i>CSS</span>
+            <span class="badge"><i class="fa-brands fa-js"></i>JavaScript</span>
+            <span class="badge"><i class="fa-brands fa-react"></i>React</span>
+            <span class="badge"><i class="fa-brands fa-node"></i>Node.js</span>
+            <span class="badge"><i class="fa-solid fa-database"></i>MongoDB</span>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Saksham Saini | Personal Profile Webpage
+    </footer>
+
+</div>
+
+</body>
+</html>
